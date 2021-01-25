@@ -244,8 +244,8 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(arr){
-  const newArr = [];
-  for(i in arr){
+  let newArr = [];
+  for(let i in arr){
     if(arr[i].years.includes('190', 0) && arr[i].years.includes('19', 7)){
       newArr.push(arr[i].name);
     }
@@ -315,7 +315,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 function lotsOfArt(arr){
   const newArr = [];
-  for(i in arr){
+  for(let i in arr){
     if(arr[i].paintings >= 100){
       newArr.push(arr[i].name);
     }
